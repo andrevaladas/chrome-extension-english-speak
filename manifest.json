@@ -1,0 +1,29 @@
+{
+  "name": "English Speak",
+  "description": "Auto Playlist™",
+  "version": "0.1",
+  "permissions": [
+	"tabs", "http://*/*"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+	{
+		"matches": ["*://*/*"],
+		"js": [
+				"jquery-1.11.1.min.js"
+		]
+	}
+  ],
+  "browser_action": {
+	"default_title": "English Speak",
+    "default_icon": "icon.png"
+  },
+  "icons": { "16": "icon.png",
+           "48": "icon.png",
+          "128": "icon.png"
+  },
+  "manifest_version": 2
+}
+
